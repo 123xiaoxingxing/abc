@@ -1,0 +1,566 @@
+/**
+* 功能：关于我们页面样式
+* 开发者：
+* 最后修改日期：
+**/
+@charset "UTF-8";
+/*页面主题内容样式*/
+main{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+section{
+    width: 100%;
+    position: relative;
+}
+/*banner图样式*/
+.banimg{
+    height: 500px;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    padding-left: 17%;
+    text-align: left;
+    position: absolute;
+}
+.banimg>div:nth-child(1){
+    background: url("../images/service-images/service-software-banner.png") no-repeat;
+    background-size: cover;
+}
+.banimg>div:nth-child(2){
+    background: url("../images/service-images/service-wechat-banner.png") no-repeat;
+    background-size: cover;
+}
+.banimg>div:nth-child(3){
+    background: url("../images/service-images/service-mobile-banner.png") no-repeat;
+    background-size: cover;
+}
+.banimg>div:nth-child(4){
+    background: url("../images/service-images/service-network-banner.png") no-repeat;
+    background-size: cover;
+}
+.banimg>div:nth-child(5){
+    background: url("../images/service-images/service-consultant-banner.png") no-repeat;
+    background-size: cover;
+}
+.banner h1{
+    color: #fff;
+    font-size: 2.625em;
+    letter-spacing: 2px;
+    padding-top: 185px;
+    padding-bottom: 50px;
+}
+.banner h2{
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+/*按钮图样式*/
+.btntab .tab{
+    position: relative;
+    min-width: 800px;
+}
+.btntab .tab>div{
+    width: 100%;
+    height: 105px;
+    background-color: #fff;
+    border-bottom: 1px solid #bcbcbc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.btntab .tab>div a{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #909090;
+    font-size: 1.125em;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+/*在按钮图之前加的内容*/
+.btntab .tab>div a:nth-child(1):before{
+    content: url("../images/service-images/service-tab-1.png");
+    margin-right: 10px;
+}
+.btntab .tab>div a:nth-child(2):before{
+    content: url("../images/service-images/service-tab-2.png");
+    margin-right: 10px;
+}
+.btntab .tab>div a:nth-child(3):before{
+    content: url("../images/service-images/service-tab-3.png");
+    margin-right: 10px;
+}
+.btntab .tab>div a:nth-child(4):before{
+    content: url("../images/service-images/service-tab-4.png");
+    margin-right: 10px;
+}
+.btntab .tab>div a:nth-child(5):before{
+    content: url("../images/service-images/service-tab-5.png");
+    margin-right: 10px;
+}
+.btntab .tab>.indicator{
+    display: block;
+    width: 250px;
+    position: absolute;
+    bottom: 1px;
+    height: 2px;
+    background-color: #3c9de5;
+}
+/*页面公共样式部分*/
+.service-detail h3{
+    color: #303030;
+    font-size: 1.75em;
+    margin-top: 70px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.service-detail h4{
+    color: #3c9ce6;
+    font-size: 1.25em;
+    margin-top: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    /*margin-bottom: 70px;*/
+}
+.service-detail>div>div:nth-child(1){
+    background-color: #f6f6f6;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.service-detail>div>div:nth-child(2){
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+/*软件定制服务内容样式*/
+/*****************************************/
+/*定制开发流程样式*/
+section>.software>div:nth-child(1)>.full-img{
+    width: 80%;
+    padding-bottom: 60px;
+    max-width: 1182px;
+}
+section>.software>div:nth-child(1)>.full-img>img{
+    width: 100%;
+}
+/*定制优势样式*/
+
+section>.software>div:nth-child(2)>span{
+    margin-bottom: 40px;
+}
+section>.software>div:nth-child(2)>span:before{
+    content: url("../images/service-images/separate-line.png");
+}
+/*图片列表样式*/
+section>.software>div:nth-child(2)>ul{
+    width: 90%;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section>.software>div:nth-child(2)>ul>li{
+    padding-bottom: 30px;
+    width: 33.3%;
+}
+section>.software>div:nth-child(2)>ul>li>div{
+    overflow: hidden;
+}
+section>.software>div:nth-child(2)>ul>li>div:hover img{
+    transform: scale(1.2);
+    transition: all .4s ease-out;
+}
+section>.software>div:nth-child(2)>ul>li>div>img{
+    width: 100%;
+    display: block;
+}
+section>.software>div:nth-child(2)>ul>li>span{
+    padding: 20px 0 23px 10px;
+    display: block;
+    color: #303030;
+    font-size: 1em;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+section>.software>div:nth-child(2)>ul>li>p{
+    padding-left: 10px;
+    color: #303030;
+    font-size: 1em;
+    line-height: 25px;
+    padding-right: 19%;
+    letter-spacing: 1px;
+}
+/*微信开发平台内容样式*/
+/*****************************************/
+/*核心服务样式*/
+section>.wechat>div:nth-child(1){
+    padding: 0 15% 70px;;
+}
+section>.wechat>div:nth-child(1)>div{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*max-width: 970px;*/
+    width: 100%;
+}
+section>.wechat>div:nth-child(1)>div>div{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 230px;
+    color: #303030;
+}
+section>.wechat>div:nth-child(1)>div>div>span{
+    padding: 25px 0 20px;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+section>.wechat>div:nth-child(1)>div>div>p{
+    line-height: 24px;
+    font-size: .875em;
+    letter-spacing: 1px;
+    width: 100%;
+}
+section>.wechat>div:nth-child(1)>div>div:nth-child(1):before{
+    content: url("../images/service-images/wechat-1.png");
+}
+section>.wechat>div:nth-child(1)>div>div:nth-child(2):before{
+    content: url("../images/service-images/wechat-2.png");
+}
+section>.wechat>div:nth-child(1)>div>div:nth-child(3):before{
+    content: url("../images/service-images/wechat-3.png");
+}
+/*微信建设优势样式*/
+section>.wechat>div:nth-child(2){
+    background: url("../images/service-images/service-advantage-bg (1).png");
+}
+section>.wechat>div:nth-child(2)>span{
+    margin-bottom: 100px;
+    margin-top: 28px;
+}
+section>.wechat h3,section>.wechat h4{
+    color: #fff;
+}
+section>.wechat>div:nth-child(2)>span:before{
+    content: url("../images/service-images/separate-line.png");
+}
+section>.wechat>div:nth-child(2)>.full-img{
+    width: 80%;
+    padding-bottom: 60px;
+    max-width: 1182px;
+    margin-bottom: 120px;
+}
+section>.wechat>div:nth-child(2)>.full-img>img{
+    width: 100%;
+}
+/*移动互联网开发样式*/
+section>.mobile>div{
+    padding: 0 15% 120px;
+}
+section>.mobile>div:nth-child(1)>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+section>.mobile>div:nth-child(1)>div>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    width: 180px;
+    height: 192px;
+}
+section>.mobile>div:nth-child(1)>div>p>span{
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 1.75em;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+section>.mobile>div:nth-child(1)>div>p:nth-child(1){
+    background: url("../images/service-images/mobile-1.png") no-repeat;
+    background-size: contain;
+}
+section>.mobile>div:nth-child(1)>div>p:nth-child(2){
+    background: url("../images/service-images/mobile-2.png") no-repeat;
+    background-size: contain;
+}
+section>.mobile>div:nth-child(1)>div>p:nth-child(3){
+    background: url("../images/service-images/mobile-3.png") no-repeat;
+    background-size: contain;
+}
+/*Android App 定制开发样式*/
+section>.mobile>div:nth-child(2)>div{
+    width: 100%;
+    max-width: 920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+section>.mobile>div:nth-child(2)>div>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 180px;
+    height: 192px;
+}
+section>.mobile>div:nth-child(2)>div>p>span{
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 1.75em;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+section>.mobile>div:nth-child(2)>div>p:nth-child(1){
+    background: url("../images/service-images/mobile-4.png") no-repeat;
+    background-size: contain;
+}
+section>.mobile>div:nth-child(2)>div>p:nth-child(2){
+    background: url("../images/service-images/mobile-5.png") no-repeat;
+    background-size: contain;
+}
+section>.mobile>div:nth-child(2)>div>p:nth-child(3){
+    background: url("../images/service-images/mobile-6.png") no-repeat;
+    background-size: contain;
+}
+/*两大运营板块样式*/
+/*************************************/
+/*网络运营服务样式*/
+section>.network>div:nth-child(1){
+    background-color: #f6f6f6;
+    padding: 0 15% 70px;
+}
+section>.network>div:nth-child(1)>div{
+    max-width: 1058px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border: 1px solid #eee;
+    margin-top: 40px;
+}
+section>.network>div:nth-child(1)>div>div{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: #fff;
+}
+section>.network>div:nth-child(1)>div>div p{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 10%;
+}
+section>.network>div:nth-child(1)>div>div>label{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 10%;
+    height: 80px;
+}
+section>.network>div:nth-child(1)>div>div:nth-child(1) label{
+    background: url("../images/service-images/network-1.png") no-repeat;
+    background-size: cover;
+}
+section>.network>div:nth-child(1)>div>div:nth-child(2) label{
+    background: url("../images/service-images/network-2.png") no-repeat;
+    background-size: cover;
+}
+section>.network>div:nth-child(1)>div>div label span{
+    color: #fff;
+    letter-spacing: 1px;
+}
+section>.network>div:nth-child(1)>div>div label span:nth-child(1){
+    font-size: 1.75em;
+    font-weight: 500;
+    padding-right: 20px;
+}
+section>.network>div:nth-child(1)>div>div label span:nth-child(2){
+    font-size: 1em;
+    padding-top: 10px;
+}
+section>.network>div:nth-child(1)>div>div p{
+    font-size: 1em;
+    width: 100%;
+    color: #303030;
+    letter-spacing: 1px;
+}
+section>.network>div:nth-child(1)>div>div p:before{
+    content: " ";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #3c9de5;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+section>.network>div:nth-child(1)>div>div:nth-child(1) p{
+    line-height: 50px;
+}
+section>.network>div:nth-child(1)>div>div:nth-child(1) p:nth-child(2){
+    padding-top: 30px;
+}
+section>.network>div:nth-child(1)>div>div:nth-child(2) p{
+    line-height: 40px;
+    border-left: 1px solid #eee;
+}
+section>.network>div:nth-child(1)>div>div:nth-child(2)>p:nth-child(2){
+    padding-top: 20px;
+}
+/*运营服务样式*/
+.network>div:nth-child(2)>div{
+    padding: 70px 0 60px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: relative;
+    max-width: 1100px;
+}
+.network>div:nth-child(2)>div>div{
+    width: 50%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.network>div:nth-child(2)>div>img{
+    width: 319px;
+}
+/*.network>div:nth-child(2)>div img{*/
+    /*width: 40%;*/
+/*}*/
+.network>div:nth-child(2)>div>div>h5{
+    color: #3c9de5;
+    font-size: 1.875em;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.network>div:nth-child(2)>div>div>span{
+    width: 40px;
+    border-bottom: 2px solid #3c9de5;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.network>div:nth-child(2)>div>div p{
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #666;
+    padding-bottom: 10px;
+    line-height: 40px;
+    width: 100%;
+}
+.network>div:nth-child(2)>span{
+    display: block;
+    width: 100%;
+    padding-bottom: 1px;
+    border-top: 1px dashed #d0d0d0;
+}
+/*解决法案咨询样式*/
+/******************************/
+/*三大优势结合样式*/
+.consulant>div:nth-child(1){
+    padding-bottom: 60px;
+}
+.consulant>div:nth-child(1)>.full-img{
+    max-width: 1058px;
+    padding-bottom: 60px;
+    width: 80%;
+}
+.consulant>div:nth-child(1)>.full-img>img{
+    width: 100%;
+}
+/*Aplus为您提供样式*/
+.consulant>div:nth-child(2)>div{
+    width: 90%;
+    max-width: 1196px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.consulant>div:nth-child(2)>div>div{
+    width: 33%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.consulant>div:nth-child(2)>div>img{
+    width: 33%;
+}
+.consulant>div:nth-child(2)>div>div:nth-child(2){
+    padding-left: 40px;
+}
+.consulant>div:nth-child(2)>div>div>div{
+    margin-bottom: 70px;
+}
+.consulant>div:nth-child(2)>div>div>div>h5{
+    color: #3c9de5;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 36px;
+}
+.consulant>div:nth-child(2)>div>div>div p{
+    color: #666;
+    line-height: 36px;
+}
+/*.software,.wechat,.mobile,.network,.consulant{*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+/*}*/
+

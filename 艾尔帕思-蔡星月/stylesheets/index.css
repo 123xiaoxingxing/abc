@@ -1,0 +1,648 @@
+/**
+* 功能：首页样式
+* 开发者：
+* 最后修改日期：
+**/
+@charset "UTF-8";
+/*轮播图样式*/
+section{
+    width: 100%;
+    position: relative;
+}
+section .carousel{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+section .carousel .slider{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section>.carousel>.slider>div{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    /*z-index: 100;*/
+}
+section>.carousel>.slider>div>p{
+    width: 100%;
+    text-align: center;
+}
+/*第一幅轮播图*/
+section>.carousel>.slider:first-child{
+    background: url("../images/index-images/home-banner-1.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section>.carousel>.slider:first-child>div{
+    background: url("../images/index-images/home-banner-content-1.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 696px;
+    height: 176px;
+    margin-top: -88px;
+    margin-left: -348px;
+}
+section>.carousel>.slider:first-child>div>p{
+    width: 100%;
+    text-align: center;
+}
+section>.carousel>.slider:first-child>div>p:first-child{
+    color: #b5b7b9;
+    /*opacity: 0;*/
+    font-size: .875em;
+    line-height: 15px;
+    animation: movedown 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+section>.carousel>.slider:first-child>div>p:nth-child(2){
+    color: #fff;
+    font-size: 4em;
+    line-height: 135px;
+    /*opacity: 0;*/
+    animation: leftdown 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+section>.carousel>.slider:first-child>div>p:nth-child(3){
+    color: #3c9ce6;
+    /*opacity: 0;*/
+    font-size: 1.375em;
+    line-height: 70px;
+    animation: rightdown 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+/*第二幅轮播图*/
+section>.carousel>.slider:nth-child(2){
+    background: url("../images/index-images/home-banner-2.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section>.carousel>.slider:nth-child(2)>div{
+    width: 1000px;
+    height: 210px;
+    margin-top: -105px;
+    margin-left: -500px;
+}
+section>.carousel>.slider:nth-child(2)>div>p:nth-child(1){
+    color: #fff;
+    font-size: 2.625em;
+    line-height: 100px;
+    /*opacity: 0;*/
+    animation: movedown 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+section>.carousel>.slider:nth-child(2)>div>p:nth-child(2){
+    border-bottom: 1px solid #3c9ce6;
+    /*opacity: 0;*/
+    transition: opacity 1s ease-out;
+}
+section>.carousel>.slider:nth-child(2)>div>p:nth-child(3){
+    font-size: 3.5em;
+    line-height: 110px;
+    color: #3c9ce6;
+    /*opacity: 0;*/
+    animation: rightdown 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+/*第三幅轮播图*/
+section>.carousel>.slider:nth-child(3){
+    background: url("../images/index-images/home-banner-3.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section>.carousel>.slider:nth-child(3)>div{
+    width: 848px;
+    height: 154px;
+    margin-top: -77px;
+    margin-left: -424px;
+}
+section>.carousel>.slider:nth-child(3)>div>p:nth-child(1){
+    font-size: 2.625em;
+    color: #fff;
+    /*opacity: 0;*/
+    animation: movedown 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+section>.carousel>.slider:nth-child(3)>div>p:nth-child(2){
+    font-size: 3.5em;
+    line-height: 100px;
+    color: #3c9ce6;
+    /*opacity: 0;*/
+    animation: rightdown 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+section>.carousel>.slider:nth-child(3)>div>p:nth-child(3){
+    border-bottom: 1px solid #3c9ce6;
+    /*opacity: 0;*/
+    transition: opacity 1s ease-out;
+}
+/*第四幅轮播图*/
+section>.carousel>.slider:nth-child(4){
+    background: url("../images/index-images/home-banner-4.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section>.carousel>.slider:nth-child(4)>div{
+    width: 1000px;
+    height: 210px;
+    margin-top: -105px;
+    margin-left: -500px;
+}
+section>.carousel>.slider:nth-child(4)>div>p:nth-child(1){
+    font-size: 2.625em;
+    color: #fff;
+    line-height: 100px;
+    animation: movedown 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+section>.carousel>.slider:nth-child(4)>div>p:nth-child(2){
+    border-bottom: 1px solid #3c9ce6;
+    /*opacity: 0;*/
+    /*transition: opacity 1s ease-out;   */
+
+}
+section>.carousel>.slider:nth-child(4)>div>p:nth-child(3){
+    font-size: 3.5em;
+    color: #3c9de6;
+    /*opacity: 0;*/
+    animation: rightdown 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+/**************************************/
+/*我们的服务样式*/
+.home-service{
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    padding-bottom: 80px;
+}
+.home-service>h3{
+    color: #303030;
+    font-size: 1.75em;
+    margin-top: 70px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+.home-service>ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.home-service>ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap:nowrap;
+}
+.home-service>ul li>a{
+    display: block;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    border-radius: 50%;
+    padding: 4px;
+    border: 3px solid #dedede;
+}
+.home-service>ul>li:nth-child(1)>a:before{
+    content: url("../images/index-images/icon-service-1.png");
+}
+.home-service>ul>li:nth-child(2)>a:before{
+    content: url("../images/index-images/icon-service-2.png");
+}
+.home-service>ul>li:nth-child(3)>a:before{
+    content: url("../images/index-images/icon-service-3.png");
+}
+.home-service>ul>li:nth-child(4)>a:before{
+    content: url("../images/index-images/icon-service-4.png");
+}
+.home-service>ul>li:nth-child(5)>a:before{
+    content: url("../images/index-images/icon-service-5.png");
+}
+.home-service>ul li>a:before{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 200;
+}
+.home-service>ul li>span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+    font-size: 1.125em;
+    color: #303030;
+}
+.home-service>ul li>a span{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #ebecf0;
+    border-radius: 50%;
+    display: block;
+}
+/*定义动画帧*/
+@keyframes movedown {
+    0%{
+        opacity: 0;
+        transform: translatey(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+@keyframes rightdown {
+    0%{
+        opacity: 0;
+        transform: translatey(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+@keyframes leftdown {
+    0%{
+        opacity: 0;
+        transform: translatex(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+.home-service>ul li:nth-child(1):hover a:before{
+    content: url("../images/index-images/icon-service-1-hover.png");
+    animation: movedown .4s ease-in-out;
+    animation-fill-mode: both;
+}
+.home-service>ul li:nth-child(2):hover a:before{
+    content: url("../images/index-images/icon-service-2-hover.png");
+    animation: movedown .4s ease-in-out;
+    animation-fill-mode: both;
+}
+.home-service>ul li:nth-child(3):hover a:before{
+    content: url("../images/index-images/icon-service-3-hover.png");
+    animation: movedown .4s ease-in-out;
+    animation-fill-mode: both;
+}
+.home-service>ul li:nth-child(4):hover a:before{
+    content: url("../images/index-images/icon-service-4-hover.png");
+    animation: movedown .4s ease-in-out;
+    animation-fill-mode: both;
+}
+.home-service>ul li:nth-child(5):hover a:before{
+    content: url("../images/index-images/icon-service-5-hover.png");
+    animation: movedown .4s ease-in-out;
+    animation-fill-mode: both;
+}
+.home-service>ul li:hover a{
+   border: 3px solid #338ed3;
+}
+.home-service>ul li:hover a>span{
+    background-color: #338ed3;
+}
+.home-service>ul li:hover>span{
+    color: #338ed3;
+}
+/*方案案例*/
+.home-case{
+    padding-bottom: 80px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+}
+.home-case>h3{
+    color: #303030;
+    font-size: 1.75em;
+    margin-top: 70px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+.home-case>ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction:row;
+    flex-wrap:wrap;
+    width: 90%;
+    position: relative;
+}
+.home-case>ul>li{
+    width: 33.3%;
+    position: relative;
+    height: 216px;
+}
+
+.home-case>ul>li:nth-child(1){
+    background: url("../images/index-images/home-case-1.png") no-repeat;
+    background-size: cover;
+}
+.home-case>ul>li:nth-child(2){
+    background: url("../images/index-images/home-case-2.png") no-repeat;
+    background-size: cover;
+}
+.home-case>ul>li:nth-child(3){
+    background: url("../images/index-images/home-case-3.png") no-repeat;
+    background-size: cover;
+}
+.home-case>ul>li:nth-child(4){
+    background: url("../images/index-images/home-case-4.png") no-repeat;
+    background-size: cover;
+}
+.home-case>ul>li:nth-child(5){
+    background: url("../images/index-images/home-case-5.png") no-repeat;
+    background-size: cover;
+}
+/*.home-case>ul>li:nth-child(6){*/
+    /*background: url("../images/index-images/home-case-6.png") no-repeat;*/
+    /*background-size: cover;*/
+/*}*/
+.home-case>ul>li>a>div{
+    position: absolute;
+    transition: all .4s ease-out;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54,61,66,.91);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+}
+.home-case>ul>li>a>div:after{
+    content: "";
+    display: block;
+    width: 60px;
+    background-color: #fff;
+    height: 2px;
+}
+.home-case>ul>li>a>div>p{
+    font-size: 1.75em;
+    letter-spacing: 5px;
+    line-height: 60px
+}
+.home-case>ul>li:last-child>a>div:first-child{
+    opacity: 1;
+}
+.home-case>ul>li:last-child>a>div{
+    background-color: #3c9de5;
+}
+.home-case>ul>li:last-child>a>div:after{
+    content: "";
+    display: none;
+}
+.home-case>ul>li:last-child>a>div:first-child:before{
+    content: url("../images/index-images/home-case-6.png");
+}
+.home-case>ul>li:last-child>a>div:last-child:before{
+    content: url("../images/index-images/home-case-6-hover.png");
+}
+.home-case>ul>li:last-child>a>div>p{
+    line-height: 80px;
+}
+.home-case>ul>li:last-child>a>div:first-child>p{
+    color: #1b7cc6;
+}
+.home-case>ul>li:hover div{
+    opacity: 1;
+}
+/*产品体系样式*/
+.home-product{
+    background-color: #f6f6f6;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    width: 100%;
+}
+.home-product>h3{
+    color: #303030;
+    font-size: 1.75em;
+    margin-top: 70px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.home-product>ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    width: 90%;
+    margin-top: 60px;
+    position: relative;
+}
+.home-product>ul>li{
+    width: 20%;
+    height: 400px;
+    background-color: #fff;
+    border-top: 1px solid #d3d9de;
+    border-bottom: 1px solid #d3d9de;
+    overflow: hidden;
+    transition: width .4s ease-out;
+}
+.home-product>ul>.odd{
+    border-left: 1px solid #d3d9de;
+    border-right: 1px solid #d3d9de;
+}
+.home-product>ul>li>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+}
+.home-product>ul>li>div:nth-child(1){
+    min-height: 175px;
+    background-color: #e6e6e6;
+}
+.home-product>ul>.odd>div:nth-child(1){
+    background-color: #ebebec;
+}
+.home-product>ul>li:nth-child(1)>div:nth-child(1):before{
+    content: url("../images/index-images/home-product-1.png");
+    margin-top: 10px;
+    display: block;
+}
+.home-product>ul>li:nth-child(2)>div:nth-child(1):before{
+    content: url("../images/index-images/home-product-2.png");
+    margin-top: 10px;
+    display: block;
+}
+.home-product>ul>li:nth-child(3)>div:nth-child(1):before{
+    content: url("../images/index-images/home-product-3.png");
+    margin-top: 10px;
+    display: block;
+}
+.home-product>ul>li:nth-child(4)>div:nth-child(1):before{
+    content: url("../images/index-images/home-product-4.png");
+    margin-top: 10px;
+    display: block;
+}
+.home-product>ul>li:nth-child(5)>div:nth-child(1):before{
+    content: url("../images/index-images/home-product-5.png");
+    margin-top: 10px;
+    display: block;
+}
+.home-product>ul>li>div:nth-child(1)>p:nth-child(1){
+    line-height: 40px;
+    font-weight: 500;
+    color: #303038;
+    font-size: 1em;
+}
+.home-product>ul>li>div:nth-child(1)>p:nth-child(2){
+    line-height: 20px;
+    font-size: .875em;
+    color: #757575;
+}
+.home-product>ul>li>div:nth-child(2){
+    background-color: #fff;
+    min-height: 225px;
+    padding: 20px
+}
+.home-product>ul>li>div:nth-child(2)>p{
+    font-size: 1em;
+    line-height: 40px;
+    color: #303038;
+}
+.home-product>ul>li:hover div:first-child p{
+    color: #fff;
+}
+.home-product>ul>li:hover div:first-child{
+    background-color: #3c9de5;
+}
+.home-product>ul>li:hover{
+    border: 1px solid #3c9de5;
+    box-shadow: 0 0 8px #3c9de5;
+    z-index: 100;
+    width: 25%;
+}
+/*关于我们样式部分*/
+.home-us{
+    background-color: #fff;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+}
+.home-us>h3{
+    color: #303030;
+    font-size: 1.75em;
+    margin-top: 70px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.home-us>p{
+    letter-spacing: 2px;
+    line-height: 38px;
+    font-size: 1em;
+    color: #7b7b7b;
+    margin-top: 34px;
+    width: 90%;
+    text-indent: 2em;
+}
+/*联系我们样式部分*/
+.home-contact{
+    background-color: #f6f6f6;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+}
+.home-contact>h3{
+    color: #303030;
+    font-size: 1.75em;
+    margin-top: 70px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+.home-contact>ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:row;
+    flex-wrap:wrap;
+    width: 90%;
+}
+.home-contact>ul>li{
+    margin-bottom: 20px;
+    width: 380px;
+    height: 216px;
+    border: 1px solid #d3d9de;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    position: relative;
+}
+.home-contact>ul>li:active{
+    border-bottom: 4px solid #3c9de5;
+}
+.home-contact>ul>li>p{
+    font-size: 1.25em;
+    color: #3c9de5;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.home-contact>ul>li>div{
+    width: 100%;
+    padding-left: 40px;
+    position: relative;
+}
+.home-contact>ul>li>div>span{
+    color: #303038;
+    font-size: .875em;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.home-contact>ul>li>div:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home-contact>ul>li>div:nth-child(2):before{
+    content: url("../images/index-images/icon-location.png");
+}
+.home-contact>ul>li>div:nth-child(3):before{
+    content: url("../images/index-images/icon-phone.png");
+}
+.home-contact>ul>li>div:nth-child(4):before{
+    content: url("../images/index-images/icon-email.png");
+}
+

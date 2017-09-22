@@ -1,0 +1,172 @@
+/**
+* 功能：关于我们页面样式
+* 开发者：
+* 最后修改日期：
+**/
+@charset "UTF-8";
+/*banner图样式*/
+section{
+    width: 100%;
+    position: relative;
+}
+.main-content>section:nth-child(1){
+    z-index: 0;
+}
+section>.banner{
+    background: url("../images/about-images/us-banner.png") no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+section>.banner>h1{
+    font-size: 4.375em;
+    letter-spacing: 10px;
+    padding: 0;
+    color: #fff;
+}
+section>.banner>h2{
+    padding-top: 50px;
+    font-size: 2.625em;
+    letter-spacing: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+section>.banner>h2>span{
+    padding-left: 140px;
+    border-bottom: 1px solid #3c9ce6;
+    display: block;
+    margin: 0 30px;
+}
+/*简介部分*/
+.main-content>section:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    flex-direction: column;
+}
+.main-content>section:nth-child(2)>h5{
+    font-size: 1.75em;
+    color: #3c9de5;
+    letter-spacing: 1px;
+    padding-top: 80px;
+    font-weight: 400;
+}
+.main-content>section:nth-child(2)>p {
+    width: 100%;
+    color: #666;
+    line-height: 25px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 0 15% 30px;
+    text-indent: 2em;
+}
+/*发展历程部分*/
+.main-content>section:nth-child(3){
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-bottom: 80px
+}
+.main-content>section:nth-child(3)>h5{
+    font-size: 1.75em;
+    color: #3c9de5;
+    letter-spacing: 1px;
+    padding-top: 80px;
+    font-weight: 400;
+}
+.main-content>section:nth-child(3)>.tree{
+    width: 100%;
+    position: relative;
+}
+.main-content>section:nth-child(3)>.tree>span{
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    background-color: #3c9de5;
+    border-radius: 4px;
+}
+.main-content>section:nth-child(3)>.tree>div{
+    z-index: 100;
+    position: relative;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.main-content>section:nth-child(3)>.tree>div>div:nth-child(1){
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 50%;
+}
+.main-content>section:nth-child(3)>.tree>div>div>span{
+    color: #3c9de5;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 5px 20px 8px;
+}
+.main-content>section:nth-child(3)>.tree>div>div>.striping{
+    width: 130px;
+    height: 3px;
+    background-color: #3c9de5;
+}
+.main-content>section:nth-child(3)>.tree>div>.circle{
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid #3c9de5;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 55px;
+    left: 50%;
+    margin-left: -10px;
+}
+.main-content>section:nth-child(3)>.tree>div>div:last-child{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+}
+.main-content>section:nth-child(3)>.tree>div>div>p{
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #666;
+    font-size: 1em;
+    padding: 0 20px;
+    text-align: left;
+}
+/*公司资源部分*/
+.main-content>section:nth-child(4){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+.main-content>section:nth-child(4)>h5{
+    font-size: 1.75em;
+    color: #3c9de5;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 40px;
+}
+.main-content>section:nth-child(4)>p{
+    font-size: 1.125em;
+    letter-spacing: 1px;
+    padding-top: 17px;
+    font-weight: 100;
+    color: #666;
+}
+.main-content>section:nth-child(4)>p>span:nth-child(1){
+    padding-right: 60px;
+}
